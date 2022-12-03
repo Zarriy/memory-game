@@ -21,7 +21,3 @@ body {
 .cardsDiv {
   margin: 50px 20px;
 }
-.MuiFab-root {
-  position: absolute;
-  top: -100px;
-}

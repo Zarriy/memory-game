@@ -8,7 +8,7 @@ function ImgCard(props) {
     <Card>
       <CardActionArea
         onClick={() => addSelected(props.name)}
-        sx={{ height: "300px", boxShadow: 1 }}
+        sx={{ maxHeight: "260px", boxShadow: 1 }}
       >
         <img src={props.imgUrl} width="100%" alt={props.name} />
       </CardActionArea>

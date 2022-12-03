@@ -1,22 +1,34 @@
 import Box from "@mui/material/Box";
 import { useContext } from "react";
 import { customCtx } from "./../context";
+import logo from "./../assets/idea.png";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Header() {
   const { score, bestScore } = useContext(customCtx);
+  const matches = useMediaQuery("(min-width:500px)");
+  const value = !matches
+    ? {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: "10px",
+        height: "180px",
+      }
+    : { justifyContent: "space-evenly", height: "80px" };
   return (
     <Box
       sx={{
-        height: "80px",
         backgroundColor: "#4361ee",
         width: "100vw",
         borderRadius: "none",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-evenly",
+        ...value,
       }}
     >
-      <div>Memory Game</div>
+      <div>
+        <img src={logo} height="50px" />
+      </div>
       <Box
         sx={{
           height: "40px",

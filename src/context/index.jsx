@@ -36,7 +36,7 @@ function CtxProvider(props) {
         const randomData = randomizer(data);
         const twelveCharacters = randomData.slice(0, 12);
         setData(twelveCharacters);
-        setLoading(false);
+        setTimeout(() => setLoading(false), 1000);
       });
   }, [win]);
 
