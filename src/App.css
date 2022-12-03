@@ -8,6 +8,8 @@
   width: 100vw;
   height: 100vh;
   background-color: #264653;
+  background-image: url("./assets/game-of-thrones-1-1920x1080.jpg");
+  background-position: center;
 }
 body {
   margin: 0;
